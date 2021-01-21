@@ -1,13 +1,13 @@
 import React from 'react';
-import {ImageBackground, StyleSheet, TouchableOpacity} from 'react-native';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
+import {moderateScale} from 'react-native-size-matters';
+import Roboto from './Roboto';
 
 // config
 import {Card} from '../Global/Style/Card';
 import {Size} from '../Global/Config/Size';
 import {Layouting} from '../Global/Style/Layout';
-import Roboto from './Roboto';
-import {moderateScale} from 'react-native-size-matters';
 
 export default function TrendingItem({movie, onPress, opacity = 0.8}) {
   return (
