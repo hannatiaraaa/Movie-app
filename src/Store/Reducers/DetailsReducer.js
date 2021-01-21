@@ -7,8 +7,6 @@ const initialState = {
 export const DetailsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FILL_MOVIE_DETAILS:
-      console.log(action.payload);
-      console.log('aship');
       return {
         ...state,
         itemDetails: action.payload,
