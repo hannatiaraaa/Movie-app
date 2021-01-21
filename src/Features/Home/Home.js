@@ -4,7 +4,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {FlatList} from 'react-native-gesture-handler';
 
 // component
-import TrendingItem from '../../Shared/Components/TrendingItem.';
+import TrendingItem from '../../Shared/Components/TrendingItem';
 import NowPlayingItem from '../../Shared/Components/NowPlayingItem';
 import Roboto from '../../Shared/Components/Roboto';
 
