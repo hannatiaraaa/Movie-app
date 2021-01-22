@@ -4,7 +4,7 @@ import FastImage from 'react-native-fast-image';
 import {moderateScale} from 'react-native-size-matters';
 import Roboto from './Roboto';
 
-// config
+// global
 import {Card} from '../Global/Style/Card';
 import {Size} from '../Global/Config/Size';
 import {Layouting} from '../Global/Style/Layout';

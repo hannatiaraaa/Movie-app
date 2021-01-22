@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 import {heightPercentageToDP} from 'react-native-responsive-screen';
 import {moderateScale} from 'react-native-size-matters';
 
-// config
+// global
 import {Size} from '../Config/Size';
 
 export const Card = (color) => {

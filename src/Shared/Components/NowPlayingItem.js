@@ -3,7 +3,7 @@ import {StyleSheet, TouchableOpacity} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import FastImage from 'react-native-fast-image';
 
-// config
+// global
 import {Card} from '../Global/Style/Card';
 import {Size} from '../Global/Config/Size';
 import {Layouting} from '../Global/Style/Layout';
