@@ -8,7 +8,7 @@ import TrendingItem from '../../Shared/Components/TrendingItem';
 import NowPlayingItem from '../../Shared/Components/NowPlayingItem';
 import Roboto from '../../Shared/Components/Roboto';
 
-// config
+// global
 import {Layouting} from '../../Shared/Global/Style/Layout';
 import {Size} from '../../Shared/Global/Config/Size';
 import {Color} from '../../Shared/Global/Config/Color';
@@ -19,6 +19,7 @@ import {connect} from 'react-redux';
 // actions
 import {actionTrending} from '../../Store/Actions/actionTrending';
 import {actionNowPlaying} from '../../Store/Actions/actionNowPlaying';
+import HeaderHome from './Header';
 
 function Home(props) {
   useEffect(() => {
@@ -32,6 +33,7 @@ function Home(props) {
 
   return (
     <SafeAreaView style={[Layouting().flex1, Size.wp92]}>
+      <HeaderHome />
       <FlatList
         keyExtractor={(item) => item.id.toString()}
         data={props.trending}

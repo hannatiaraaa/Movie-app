@@ -7,8 +7,12 @@ const Stack = createStackNavigator();
 export default function Navigation() {
   return (
     <Stack.Navigator initialRouteName={Home}>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="MovieDetails" component={MovieDetails} />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen name="MovieDetails" component={MovieDetails} options={{}} />
     </Stack.Navigator>
   );
 }
