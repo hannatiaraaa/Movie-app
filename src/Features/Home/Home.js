@@ -3,6 +3,9 @@ import {View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {FlatList} from 'react-native-gesture-handler';
 
+// header
+import HeaderHome from './Header';
+
 // component
 import TrendingItem from '../../Shared/Components/TrendingItem';
 import NowPlayingItem from '../../Shared/Components/NowPlayingItem';
@@ -19,7 +22,6 @@ import {connect} from 'react-redux';
 // actions
 import {actionTrending} from '../../Store/Actions/actionTrending';
 import {actionNowPlaying} from '../../Store/Actions/actionNowPlaying';
-import HeaderHome from './Header';
 
 function Home(props) {
   useEffect(() => {

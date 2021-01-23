@@ -1,8 +1,11 @@
 import React from 'react';
 import {Header} from 'react-native-elements';
 import FastImage from 'react-native-fast-image';
-import {ms} from 'react-native-size-matters';
+
+// icon
 import Octicons from 'react-native-vector-icons/Octicons';
+
+// global
 import {Size} from '../../Shared/Global/Config/Size';
 
 export default function HeaderHome() {
