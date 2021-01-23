@@ -12,8 +12,12 @@ export const Card = (color) => {
       height: heightPercentageToDP(60),
     },
     medium: {
-      height: moderateScale(200),
-      width: moderateScale(100),
+      height: Size.ms200,
+      width: Size.ms100,
+    },
+    large: {
+      width: Size.wp100,
+      height: heightPercentageToDP(52),
     },
     shadow: {
       shadowColor: color ? color : '#000',
