@@ -1,7 +1,10 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity} from 'react-native';
-import FastImage from 'react-native-fast-image';
 import {moderateScale} from 'react-native-size-matters';
+import {widthPercentageToDP} from 'react-native-responsive-screen';
+import FastImage from 'react-native-fast-image';
+
+// component
 import Roboto from './Roboto';
 
 // global
@@ -54,12 +57,14 @@ const styles = StyleSheet.create({
   },
   title: {
     position: 'absolute',
+    zIndex: 10,
+    width: widthPercentageToDP(80),
     textTransform: 'uppercase',
-    top: moderateScale(168),
+    top: moderateScale(140),
     left: moderateScale(20),
     textShadowColor: '#000',
-    textShadowOffset: {width: 2, height: 2},
-    textShadowRadius: 10,
+    textShadowOffset: {width: moderateScale(2), height: moderateScale(2)},
+    textShadowRadius: moderateScale(10),
     letterSpacing: 1.5,
   },
 });
